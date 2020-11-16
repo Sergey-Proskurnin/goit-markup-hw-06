@@ -613,6 +613,67 @@ body {
 .social-item .social-img-white:hover {
   background-color: var(--accent-color);
 }
+
+.subscription {
+  margin-left: 93px;
+}
+.field-email {
+  width: 358px;
+  height: 50px;
+  margin: 0;
+  /* display: inline-block; */
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2F303A;
+
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  padding-right: 0;
+  letter-spacing: 0.03em;
+  color: var(--contact-text-color);
+}
+.form-subscription {
+  display: flex;
+}
+.button-subscription {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding: 0;
+    
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+  
+  border: none;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+
+  transition: 250ms var(--bezier-page);
+}
+.button-subscription:hover,
+.button-subscription:focus {
+  background: var(--primary-white-color);
+  color: var(--accent-color);
+}
+
+.icon-subscription {
+  margin-left: 10px;
+  fill: currentColor;
+  
+}
+
 /* modal-window-css*/
 .backdrop {
   position: fixed;
