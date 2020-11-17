@@ -53,7 +53,7 @@
                 <div class="hero-container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                     <!--<a href="" class="link">Заказать услугу</a>-->
-                    <button data-open-modal type="button" class="button">Заказать услугу</button>
+                    <button data-open-modal type="button" class="button button-form">Заказать услугу</button>
                 </div>
             </section>
             <!--section2-page-feature-->
@@ -418,7 +418,7 @@
                     </svg> 
                 </button>
                 <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-                <form action="#">
+                <form class="form-modal" action="#">
                     <div class="form-field">
                         <label for="name">Имя</label>
                         <input 
@@ -449,24 +449,24 @@
                         placeholder=" "
                         autofocus>  
                     </div>
-                    <div class="form-field">
+                    <div class="form-field ">
                         <label for="name">Коментарии</label>
                         <textarea
-                            class="comments"
+                            class="comments input-name"
                             name="comments"
                             rows="5"
                             cols="45"
                             placeholder="Введите текст">
                         </textarea>  
                     </div>
-                    <div class="form-field">
+                    <div class="form-policy">
                         <input type="checkbox" name="policy" id="policy" />
                         <label for="policy">Соглашаюсь с рассылкой и принимаю
                              <a href="#">Условия договора
                              </a>
                         </label>
                     </div>
-                    
+                    <button type="submit" class="button button-form">Отправить</button>
 
 
                 </form>
