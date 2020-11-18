@@ -816,3 +816,51 @@ transform: translateY(-50%);
   border-radius: 4px;
   padding: 10px 55px;
 }
+
+.form-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon-policy {
+  display: inline-block;
+  min-width: 16px;
+  height: 15px;
+  margin-right: 8px;
+   
+  border: 1.5px solid #000000;
+  border-radius: 2px;
+ }
+ .icon-policy:focus {
+  border: 1.5px solid #000000;
+  border-radius: 2px;
+ }
+
+.checkbox:checked + .icon-policy {
+  /* transform: scale(1.2); */
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url('../images/icon-check.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+.agreement{
+  color: var(--accent-color);
+
+}
