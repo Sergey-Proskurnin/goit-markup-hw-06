@@ -418,42 +418,59 @@
                     </svg> 
                 </button>
                 <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-                <form class="form-modal" action="#">
+                <form class="form-modal" autocomplete="off" action="#">
                     <div class="form-field">
                         <label for="name">Имя</label>
-                        <input 
-                        class="input-name"
-                        type="text" 
-                        name="name" 
-                        id="name" 
-                        placeholder=" "
-                        autofocus>  
-                    </div>
-                    <div class="form-field">
-                        <label for="email">Почта</label>
-                        <input 
-                        class="input-name"
-                        type="email" 
-                        name="email" 
-                        id="email" 
-                        placeholder=" "
-                        autofocus>  
+                            <div class="position-icon">
+                                <input 
+                                class="input-name"
+                                type="text" 
+                                name="name" 
+                                id="name" 
+                                placeholder=" "
+                                autofocus>
+                                <svg class="icon-form" width= "12" height="12">
+                                    <use href="./images/sprite.svg#person"></use>
+                                </svg>
+                            </div>
+                            
                     </div>
                     <div class="form-field">
                         <label for="telephone">Телефон</label>
-                        <input 
-                        class="input-name"
-                        type="tel" 
-                        name="telephone" 
-                        id="telephone" 
-                        placeholder=" "
-                        autofocus>  
+                        <div class="position-icon">
+                            <input 
+                            class="input-name"
+                            type="tel" 
+                            name="telephone" 
+                            id="telephone" 
+                            placeholder=" "
+                            autofocus>
+                            <svg class="icon-form" width= "13" height="13">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Почта</label>
+                        <div class="position-icon">
+                            <input 
+                            class="input-name"
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            placeholder=" "
+                            autofocus>
+                            <svg class="icon-form" width= "15" height="12">
+                                <use href="./images/sprite.svg#envelope-black"></use>
+                            </svg>  
+                        </div>
                     </div>
                     <div class="form-field ">
-                        <label for="name">Коментарии</label>
+                        <label for="comments">Коментарии</label>
                         <textarea
                             class="comments input-name"
                             name="comments"
+                            id="comments"
                             rows="5"
                             cols="45"
                             placeholder="Введите текст">

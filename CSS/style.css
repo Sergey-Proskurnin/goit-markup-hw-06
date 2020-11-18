@@ -758,6 +758,11 @@ body {
   margin-left: 40px;
   margin-right: 40px;
 }
+.position-icon {
+  position: relative;
+  display: flex;
+  flex-direction:column;
+}
 .form-field:nth-child(-n+3) {
   margin-bottom: 10px;
 }
@@ -771,12 +776,30 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 45px;
+  cursor: pointer;
 }
 
 .comments.input-name {
   height: 120px;
   resize: none;
-
+}
+.icon-form {
+position: absolute;
+top: 50%;
+left: 14px;
+transform: translateY(-50%);
+}
+.input-name:focus + .icon-form,
+.input-name:hover + .icon-form{
+  fill: var(--accent-color);
+}
+.input-name:focus,
+.input-name:hover {
+  border-color: var(--accent-color);
+}
+.input-name:focus {
+  outline: none; 
 }
 .form-policy {
   text-align: center;
