@@ -93,37 +93,6 @@
                 </div>
             </section>
             <!--section3-page-product-->
-            <!-- <section class="section">
-                <div class="container">
-                    <h2 class="section-title">Чем мы занимаемся</h2>
-                    <ul class="product-list grid-list list">
-                        <li class="product-item">
-                            <div class="thumb">
-                                <img src="./images/code.jpg" alt="Фото разработки десктопных приложений" width="370">
-                                <div class="overlay-label-product">
-                                    <p class="label-product">Десктопные приложения</p> 
-                                </div>
-                            </div> 
-                        </li>
-                        <li class="product-item">
-                            <div class="thumb">
-                                <img src="./images/adaptive.jpg" alt="Фото разработки мобильных приложений" width="370">
-                                <div class="overlay-label-product">
-                                    <p class="label-product">Мобильные приложения</p> 
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="thumb">
-                                <img src="./images/design.jpg" alt="Фото разработки веб дизайн сайта" width="370">
-                                <div class="overlay-label-product">
-                                    <p class="label-product">Дизайнерские решения</p> 
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section> -->
             <section class="section">
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
@@ -396,7 +365,7 @@
             </div>
             <div class="subscription">
                 <b class="join-footer">Подпишитесь на рассылку</b>
-                <form  class="form-subscription" action="#">
+                <form  class="form-subscription" autocomplete="off" action="#">
                     <input class="field-email" type="email" name="email" placeholder="E-mail">
                     <button class="button-subscription" type="submit">Подписаться
                         <svg class="icon-subscription" width= "24" height="24">
@@ -445,7 +414,7 @@
                             id="telephone" 
                             placeholder=" "
                             autofocus>
-                            <svg class="icon-form" width= "13" height="13">
+                            <svg class="icon-form" width= "14" height="14">
                                 <use href="./images/sprite.svg#phone"></use>
                             </svg>
                         </div>
@@ -460,7 +429,7 @@
                             id="email" 
                             placeholder=" "
                             autofocus>
-                            <svg class="icon-form" width= "15" height="12">
+                            <svg class="icon-form" width= "16" height="15">
                                 <use href="./images/sprite.svg#envelope-black"></use>
                             </svg>  
                         </div>
@@ -476,17 +445,13 @@
                             placeholder="Введите текст">
                         </textarea>  
                     </div>
-                    <div class="form-policy">
-                        <input type="checkbox" name="policy" id="policy" class="checkbox"/>
+                    <label class="policy">
+                        <input type="checkbox" name="policy" class="checkbox"/>
                         <span class="icon-policy"></span>
-                        <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю
-                             <a class="agreement" href="#">Условия договора
-                             </a>
-                        </label>
-                    </div>
+                        Соглашаюсь с рассылкой и принимаю &nbsp<a class="agreement" href="#">Условия договора</a>
+                        
+                    </label>
                     <button type="submit" class="button button-form">Отправить</button>
-
-
                 </form>
             </div>
           </div>
